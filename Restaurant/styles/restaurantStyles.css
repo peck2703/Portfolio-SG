@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+Name: 					Michael Peck
+Date Created: 			02/01/2020
+Most Recent Revision: 	02/02/2020
+*/
+@font-face{
+	/*Font taken from https://www.urbanfonts.com/fonts/ManicSea.font. Listed as free for personal use*/
+	font-family: headerFont;
+	src: url(ManicSea.ttf);
+}
+body{
+	background-color: #5DACED;
+	font-family: arial, helvetica, sans-serif;
+	color: #0d1f2d;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header, footer{
+	background-color:#2B7EEF;
+	color: #fef9ff;
+	width: 100%;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+footer{
+	text-align: center;
+}
+nav{
+	display: inline-block;
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav a{
+	background-color: #2B7EEF;
+	color: aquamarine;
+	padding: 12px;
+	border: thin solid #0d1f2d;
+	text-decoration: none;
+}
+nav a:hover{
+	background-color: #fef9ff;
+	color: #5b7d87;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav a:active{
+	text-decoration: none;
+}
+nav a:visited{
+	color: #e4c3ad;
+}
+img.home{
+	display: inline;
+}
+article img{
+	float: left;
+	padding: 0px 15px;
+}
+article{
+	margin-bottom: 16px;
+}
+article.menu{
+	text-align: center; 
+	padding-left: 45px; 
+	padding-right: 45px;  
+	padding-top: 10px; 
+	padding-bottom: 15px
+}
+h1{
+	font-size: 2.5em;
+}
+.clear-float{
+	clear: both;
+}
+.right-content{
+	float: left;
+}
+p{
+	border-left: 24px;
+}
+section.center{
+	text-align: center;
+	display: inline;
+}
+#description{
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+}
+span.inline{
+	display: inline;
+}
+span.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+span.right{
+	text-align: right;
+}
+input, select, textarea{
+	margin-left: 5px;
+}
+strong.menu, th{
+	font-size: 1.5em;
+}
+label{
+	font-weight: bold;
+}
+.beverages{
+	width: 40%;
+	min-width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+tbody th{
+	background-color: darkturquoise;
+}
+tbody tr:nth-child(even) { 
+	background-color: white; 
+} 
+tbody tr:nth-child(odd) { 
+	background-color:cadetblue; 
+}
+#main-header{
+	padding-left: 150px;
+	font-family: headerFont;
+	font-size: 6em;
+}
+#sub-header{
+	padding-right: 100px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}

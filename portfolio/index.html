@@ -2,171 +2,187 @@
 <!--
 Name: 					Michael Peck
 Date Created: 			01/22/2020
-Most Recent Revision: 	01/28/2020
+Most Recent Revision: 	02/01/2020
 -->
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Michael's Portfolio</title>
-	<link href="teststyles.css" rel="stylesheet" type="text/css">
-	<style>
-		table, th, td { 
-			border: 1px solid #0d1f2d;
-			border-collapse: collapse;
-			padding: 0px 10px;
-		}
-		table { 
-			width: 60%; 
-			margin: auto;
-		} 
-		th { 
-			height: 25px;
-			background-color: black;
-			color: white;
-		}
-		tr{
-			height: 30px;
-		}
-		tfoot td { 
-			text-align: center; 
-		}
-		tbody tr:nth-child(even) { 
-			background-color: white; 
-		} 
-		tbody tr:nth-child(odd) { 
-			background-color: #e4c3ad; 
-		}
-		caption{
-			font-weight: bold;
-			font-size: 1.2em;
-			margin-bottom: 8px;
-		}
-	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Michael's Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<h1>Portfolio for Michael Peck Jr.</h1>
-	</header>
-	
-	<hr/>
-	<nav>
-			<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-			<p>
-				<a href="projects.html">My Projects</a>&nbsp;&nbsp;&nbsp;<a href="testimonials.html">Testimonials</a>&nbsp;&nbsp;&nbsp;<a href="Contact.html">Contact Me</a>
-			</p>
-			<div class="clear-float"></div>
-		</nav>
-	<hr/>
-	
-	<section>
-		<article id="about-me" class="border">
-			<h2><em>About Me</em></h2>
-			<img src="images/selfie.jpg" alt="Self portrait of Michael"/>
-			<p>I am a recent graduate from Southern New Hampshire University, but I have attended a number of colleges and universities before finally getting my degree. I have studied multiple aspects of Computer Science and Mathematics, until I turned my focus onto the Computer Gaming aspect of programming. The high-level languages that I have been focused on have been C#, C++, ASP.NET, and Java but I have also worked with other languages, particularly HTML, CSS, and some JavaScript. Through learning these languages, I became increasingly familiar with programs such as Visual Studio, Netbeans IDE, Brackets as well as Adobe Dreamweaver. In addition to the programs used in development, practices such as Scrum/Agile as well as Source Control with Git and Bitbucket were core to my overall curriculum.</p>
+	<!--Obtain the CSS style sheet for Bootstrap at https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="teststyles.css" rel="stylesheet" type="text/css">
+	<div class="container">
+		<div class="row">
+			<header>
+				<h1>Portfolio for Michael Peck Jr.</h1>
+				<h2 class="font-italic">Web Developer Extraordinaire</h2>
+				<h3 class="text-right mt-5">Solving Web Dev problems every day!</h3>
+			</header>
+		</div>
 
-			<p>I currently reside in the Greater Milwaukee Area, but that was not always so. I was originally from New England, New Hampshire and Upper Massachusetts in particular. I have two sons, one was diagnosed with Autism, and so everything that I do, I do for them. Their names are Ayden (4) and Ezio (18 months). While my primary focus was on the programming languages and practices involved in the SDLC, I was exposed to other elements in the game design process, such as level design, narrative writing, 2D animation (scripting in HTML5 and design), 3D modeling as well as texturing said models. </p>
-			<div class="clear-float"></div>
-		</article>
-		<article id="past-experiences">
-			<h2><em>Past Experiences</em></h2>
-			<img src="images/unnamed.PNG" alt="Unnamed Team Project Menu Screen" />
-			<div class="right-content">
-				<table>
-					<caption>Employment History</caption>
-					<thead>
-						<tr>
-							<th>Years of Employment</th>
-							<th>Title</th>
-							<th>Company</th>
-						</tr>
-					</thead>
-					<!--Most recent employer-->
-					<tbody>
-						<tr>
-							<td>2016-Present</td>
-							<td>Public Safety Dispatcher</td>
-							<td>AdvocateAuroraHealth</td>
-						</tr>
-						<tr>
-							<td>2019</td>
-							<td>Seasonal Fulfillment Team Member</td>
-							<td>Target</td>
-						</tr>
-						<tr>
-							<td>2011-2016</td>
-							<td>Security Officer</td>
-							<td>Securitas Security Services, USA</td>
-						</tr>
-						<tr>
-							<td>2008-2011, 2012-2013</td>
-							<td>Deli Clerk</td>
-							<td>Pick 'n Save</td>
-						</tr>
-					</tbody>
-				</table>
+		<hr/>
+		<nav>
+				<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+				<p>
+					<a href="projects.html">My Projects</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="testimonials.html">Testimonials</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="Contact.html">Contact Me</a>
+				</p>
+				<div class="clear-float"></div>
+			</nav>
+		<hr/>
+		
+		<section>
+			<article id="about-me">
+				<h2><em>About Me</em></h2>
+				<div class="col-lg-3 col-md-4">
+					<img src="images/selfie.jpg" alt="Self portrait of Michael" class="img-fluid"/>
+				</div>
+				<div class="col-lg-12  col-md-8">
+					<p>I am a recent graduate from Southern New Hampshire University, but I have attended a number of colleges and universities before finally getting my degree. I have studied multiple aspects of Computer Science and Mathematics, until I turned my focus onto the Computer Gaming aspect of programming. The high-level languages that I have been focused on have been C#, C++, ASP.NET, and Java but I have also worked with other languages, particularly HTML, CSS, and some JavaScript. Through learning these languages, I became increasingly familiar with programs such as Visual Studio, Netbeans IDE, Brackets as well as Adobe Dreamweaver. In addition to the programs used in development, practices such as Scrum/Agile as well as Source Control with Git and Bitbucket were core to my overall curriculum.</p>
+
+					<p>I currently reside in the Greater Milwaukee Area, but that was not always so. I was originally from New England, New Hampshire and Upper Massachusetts in particular. I have two sons, one was diagnosed with Autism, and so everything that I do, I do for them. Their names are Ayden (4) and Ezio (18 months). While my primary focus was on the programming languages and practices involved in the SDLC, I was exposed to other elements in the game design process, such as level design, narrative writing, 2D animation (scripting in HTML5 and design), 3D modeling as well as texturing said models. </p>
+				</div>
+				<div class="clear-float"></div>
+			</article>
+			<div class="row">
+				<div class="accordion col" id="accordionExample">
+					<div class="card">
+						<div class="card-header" id="portfolio01">
+							<h5 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="colapseOne">
+									My First Portfolio Piece
+								</button>
+							</h5>
+						</div>
+					
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body">
+								<p><a href="" target="_blank">Name of Website</a></p>
+								<figure><img src="images/accordion.png" alt="Screenshot of home page" /></figure>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="clear-float"></div>
-		</article>
-		<article id="hobbies">
-			<h2><em>Hobbies</em></h2>
-			<img src="images/books.jpg" alt="Reading as a hobby" />
-			<div class="right-content">
-			<ul>
-				<li>Authors</li>
-					<ul>
-						<li>R.A. Salvatore - <em>Legend of Drizzt series</em></li>
-						<li>Terry Goodkind - <em>Sword of Truth series</em></li>	
-						<li>Michael Chrichton - <em>Jurassic Park series, Sphere, Congo, Prey</em></li>	
-						<li>George R. R. Martin - <em>Game of Thrones series</em></li>	
-						<li>Ransom Riggs - <em>Miss Peregrine's Peculiar Children series</em></li>	
-						<li>J.K. Rowling - <em>Harry Potter series</em></li>	
-					</ul>
-				<br />
-				<li>Video Games</li>
-					<ul>
-						<li>Horizon: Zero Dawn</li>
-						<li>Final Fantasy VII</li>
-						<li>Final Fantasy VIII</li>
-						<li>Spyro: Ignited Trilogy</li>
-						<li>Ark: Survival Evolved</li>
-						<li>Deus Ex: Human Revolution</li>
-						<li>Deus Ex: Mankind Divided</li>
-						<li>Halo: The Master Chief Collection</li>
-						<li>Guitar Hero</li>
-						<li>The Legend of Zelda: Ocarina of Time</li>
-						<li>The Legend of Zelda: Ocarina of Time (Masterquest)</li>
-						<li>The Legend of Zelda: Twilight Princess</li>
-					</ul>
-				<br />
-				<li>Movies</li>
-					<ul>
-						<li>Final Fantasy VII: Advent Children</li>
-						<li>Harry Potter series</li>
-						<li>Ted</li>
-						<li>Happy Gilmore</li>
-					</ul>
-				<br />
-				<li>T.V. Shows</li>
-					<ul>
-						<li>The Big Bang Theory</li>
-						<li>Game of Thrones</li>
-						<li>Masterchef</li>
-						<li>Brooklyn Nine-Nine</li>
-						<li>Initial D</li>
-						<li>Agame Ga Kill!</li>
-						<li>Dragonball Universe (Dragonball, Z, Super)</li>
-					</ul>
-				<br />
-			</ul>
-			</div>
-			<div class="clear-float"></div>
-		</article>
-	</section>
-	<footer>
-		<p>&copy; 2020 Michael Peck. All Rights Reserved.</p>
-	</footer>
-	
-	<hr />
+				<article id="past-experiences">
+					<h2><em>Past Experiences</em></h2>
+					<div class="col-lg-3 col-md-4">
+						<img src="images/unnamed.PNG" alt="Unnamed Team Project Menu Screen" class="img-fluid"/>
+					</div>
+					<div class="right-content">
+						<div class="col-lg-9 col-md-8">
+							<table>
+								<caption>Employment History</caption>
+								<thead>
+									<tr>
+										<th>Years of Employment</th>
+										<th>Title</th>
+										<th>Company</th>
+									</tr>
+								</thead>
+								<!--Most recent employer-->
+								<tbody>
+									<tr>
+										<td>2016-Present</td>
+										<td>Public Safety Dispatcher</td>
+										<td>AdvocateAuroraHealth</td>
+									</tr>
+									<tr>
+										<td>2019</td>
+										<td>Seasonal Fulfillment Team Member</td>
+										<td>Target</td>
+									</tr>
+									<tr>
+										<td>2011-2016</td>
+										<td>Security Officer</td>
+										<td>Securitas Security Services, USA</td>
+									</tr>
+									<tr>
+										<td>2008-2011, 2012-2013</td>
+										<td>Deli Clerk</td>
+										<td>Pick 'n Save</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="clear-float"></div>
+				</article>
+			<article id="hobbies">
+				<h2><em>Hobbies</em></h2>
+				<div class="col-lg-3 col-md-4">
+					<img src="images/books.jpg" alt="Reading as a hobby" class="img-fluid"/>
+				</div>
+				<div class="right-content">
+					<div class="col-lg-9 col-md-8">
+						<ul>
+						<li>Authors</li>
+							<ul>
+								<li>R.A. Salvatore - <em>Legend of Drizzt series</em></li>
+								<li>Terry Goodkind - <em>Sword of Truth series</em></li>	
+								<li>Michael Chrichton - <em>Jurassic Park series, Sphere, Congo, Prey</em></li>	
+								<li>George R. R. Martin - <em>Game of Thrones series</em></li>	
+								<li>Ransom Riggs - <em>Miss Peregrine's Peculiar Children series</em></li>	
+								<li>J.K. Rowling - <em>Harry Potter series</em></li>	
+							</ul>
+						<br />
+						<li>Video Games</li>
+							<ul>
+								<li>Horizon: Zero Dawn</li>
+								<li>Final Fantasy VII</li>
+								<li>Final Fantasy VIII</li>
+								<li>Spyro: Ignited Trilogy</li>
+								<li>Ark: Survival Evolved</li>
+								<li>Deus Ex: Human Revolution</li>
+								<li>Deus Ex: Mankind Divided</li>
+								<li>Halo: The Master Chief Collection</li>
+								<li>Guitar Hero</li>
+								<li>The Legend of Zelda: Ocarina of Time</li>
+								<li>The Legend of Zelda: Ocarina of Time (Masterquest)</li>
+								<li>The Legend of Zelda: Twilight Princess</li>
+							</ul>
+						<br />
+						<li>Movies</li>
+							<ul>
+								<li>Final Fantasy VII: Advent Children</li>
+								<li>Harry Potter series</li>
+								<li>Ted</li>
+								<li>Happy Gilmore</li>
+							</ul>
+						<br />
+						<li>T.V. Shows</li>
+							<ul>
+								<li>The Big Bang Theory</li>
+								<li>Game of Thrones</li>
+								<li>Masterchef</li>
+								<li>Brooklyn Nine-Nine</li>
+								<li>Initial D</li>
+								<li>Agame Ga Kill!</li>
+								<li>Dragonball Universe (Dragonball, Z, Super)</li>
+							</ul>
+						<br />
+						</ul>
+					</div>
+				</div>
+				<div class="clear-float"></div>
+			</article>
+		</section>
+		<footer>
+			<p>&copy; 2020 Michael Peck. All Rights Reserved.</p>
+		</footer>
+
+		<hr />
+	</div>
+	<!--We add the necessary JavaScripting bundles from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

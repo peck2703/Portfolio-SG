@@ -2,31 +2,50 @@
 <!--
 Name: 					Michael Peck
 Date Created: 			01/25/2020
-Most Recent Revision: 	01/25/2020
+Most Recent Revision: 	02/02/2020
 -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Menu</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<header>
-			<h1>The Salty Mission</h1>
-		</header>
+		<!--Place all the css files here for faster load times -->
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
 		
-		<hr />
-		<nav>
-			<p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a></p>
-		</nav>
-		<hr />
+		<!-- Begin Div Container -->
+		<div class="container">
+			<header>
+				<h1 class="text-left" id="main-header">The Salty Mission</h1>
+				<h4 class="text-right font-italic" id="sub-header">Where the table meets the Sea!</h4>
+			</header>
+			<hr />
+			<nav>
+				<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+				<div class="row">
+					<div class="col">
+						<a href="index.html" >Home</a>
+					</div>
+					<div class="col">
+						<a href="menu.html">Menu</a>
+					</div>
+					<div class="col">
+						<a href="contact.html">Contact Me</a>
+					</div>
+				</div>
+				<div class="clear-float"></div>
+			</nav>
+			<hr />
+		
 		
 		<!--Supply the table with basic text and pricing in a 3 col, 2 row setup -->
-		<table align="center" style="padding: 0px 0px; width: 60%">
-			<tr style="width: 100%">
-				<td style="width: 33% padding: 50px 50px;">
-					<article style="text-align: center; padding-left: 45px; padding-right: 45px;  padding-top: 10px; padding-bottom: 15px">
-						<strong>Burger and Fries</strong><br />
+			<div class="row">
+				<span class="col">
+					<article class="menu">
+						<strong class="menu">Burger and Fries</strong><br />
 						An American Classic!
 						Your choice - with or without cheese
 						Pickle, onion, tomato, and lettuce
@@ -34,32 +53,32 @@ Most Recent Revision: 	01/25/2020
 						french fries <br />
 						<strong>$7.95</strong>
 					</article>
-				</td>
-				<td style="width: 33%">
-					<article style="text-align: center; padding-left: 45px; padding-right: 45px;  padding-top: 10px; padding-bottom: 15px">
-						<strong>Hot Dog and Chips</strong><br />
+				</span>
+				<span class="col">
+					<article class="menu">
+						<strong class="menu">Hot Dog and Chips</strong><br />
 						A Summer Classic!
 						Your choice - white or wheat bun
 						Relish, mustard, and ketchup 
 						Served with our house-made chips<br />
 						<strong>$7.95</strong>
 					</article>
-				</td>
-				<td style="width: 33%">
-					<article style="text-align: center; padding-left: 45px; padding-right: 45px;  padding-top: 10px; padding-bottom: 15px">
-						<strong>Italian Sausage and Peppers</strong><br />
+				</span>
+				<span class="col">
+					<article class="menu">
+						<strong class="menu">Italian Sausage and Peppers</strong><br />
 						An All-Time Favorite!
 						Your choice - mild or spicy Cole Slaw
 						Served with garlic mashers
 						french fries <br />
 						<strong>$10.95</strong>
 					</article>
-				</td>
-			</tr>
-			<tr style="width: 100%;">
-				<td style="width: 33% ">
-					<article style="text-align: center; padding-left: 45px; padding-right: 45px;  padding-top: 10px; padding-bottom: 15px">
-						<strong>Tenderloin Sandwich and Chips</strong><br />
+				</span>
+			</div>
+			<div class="row">
+				<span class="col">
+					<article class="menu">
+						<strong class="menu">Tenderloin Sandwich and Chips</strong><br />
 						Really Hits the Spot!
 						Plain or Sesame Seed bun
 						Pickle, onion, tomato, and lettuce
@@ -67,10 +86,10 @@ Most Recent Revision: 	01/25/2020
 						french fries <br />
 						<strong>$8.95</strong>
 					</article>
-				</td>
-				<td style="width: 33%">
-					<article style="text-align: center; padding-left: 45px; padding-right: 45px;  padding-top: 10px; padding-bottom: 15px">
-						<strong>House Salad</strong><br />
+				</span>
+				<span class="col">
+					<article class="menu">
+						<strong class="menu">House Salad</strong><br />
 						On the Lighter Side
 						Your choice - with or without cheese
 						Iceberg lettuc, tomatoes, peppers
@@ -78,24 +97,70 @@ Most Recent Revision: 	01/25/2020
 						 Served with a dinner roll<br />
 						<strong>$6.95</strong>
 					</article>
-				</td>
-				<td style="width: 33%">
-					<article style="text-align: center; padding-left: 45px; padding-right: 45px;  padding-top: 10px; padding-bottom: 15px">
-						<strong>Italian Sausage and Peppers</strong><br />
+				</span>
+				<span class="col">
+					<article class="menu">
+						<strong class="menu">Italian Sausage and Peppers</strong><br />
 						An All-Time Favorite!
 						Your choice - mild or spicy Cole Slaw 
 						Served with garlic mashers 
 						french fries <br />
 						<strong>$10.95</strong>
 					</article>
-				</td>
-			</tr>
-		</table>
-		<footer style="text-align: center">
+				</span>
+			</div>
+			<div class="row beverages">
+				<table class="col">
+					<th>
+						Beverages
+					</th>
+					<th class="col">
+						<!--Price-->
+					</th>
+					<tr>
+						<td class="col right">
+							Root Beer
+						</td>
+						<td class="col"> 
+							$3.00
+						</td>
+					</tr>
+					<tr>
+						<td class="col right">
+							Bottled Water
+						</td>
+						<td class="col"> 
+							$1.25
+						</td>
+					</tr>
+					<tr>
+						<td class="col right">
+							Lemonade
+						</td>
+						<td class="col"> 
+							$1.00
+						</td>
+					</tr>
+					<tr>
+						<td class="col right">
+							Iced Tea
+						</td>
+						<td class="col"> 
+							$1.25
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br />
+		<footer>
 		<hr />
 			<p>9350 Broadparks Avenue, Elmira, PA 67888</p>
 			<p>(426) 904-4220</p>
 			<p>&copy; 2020 The Salty Mission Co. All Rights Reserved.</p>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		</div>
 	</body>
 </html>

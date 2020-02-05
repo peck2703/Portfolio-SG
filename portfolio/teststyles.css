@@ -15,7 +15,7 @@ body{
 header, footer{
 	background-color: #5b7d87;
 	color: #fef9ff;
-	height: 100px;
+	width: 100%;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
 }
@@ -33,7 +33,7 @@ nav a{
 	text-align: center;
 	display: block;
 	margin: 20px;
-	width: 100px;
+	width: 125px;
 	float: left;
 }
 nav a:hover{
@@ -65,3 +65,34 @@ h1{
 p{
 	border-left: 24px;
 }
+table, th, td { 
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 0px 10px;
+		}
+		table { 
+			width: 60%; 
+			margin: auto;
+		} 
+		th { 
+			height: 25px;
+			background-color: black;
+			color: white;
+		}
+		tr{
+			height: 30px;
+		}
+		tfoot td { 
+			text-align: center; 
+		}
+		tbody tr:nth-child(even) { 
+			background-color: white; 
+		} 
+		tbody tr:nth-child(odd) { 
+			background-color: #e4c3ad; 
+		}
+		caption{
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 8px;
+		}

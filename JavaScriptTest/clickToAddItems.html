@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script type="text/javascript" src="clickToAddItems.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<div class="container">
+		<h1>Click to Add Items</h1>
+		<form name="numberFun" onSubmit="return validateItems();" onReset="resetForm();" class="form-inline">
+			<div class="form-group">
+				<label for="num1">Number 1</label>
+				<input type="number" class="form-control" id="num1">
+			</div>
+			<div class="form-group">
+				<label for="num2">Number 2</label>
+				<input type="number" class="form-control" id="num2">
+			</div>
+			<button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+			<button type="reset" id="resetButton" class="btn">Reset</button>
+		</form>
+		
+		<!-- Begin table to hold the values from the operations -->
+		<table id="results" class="table table-striped" style="display: none">
+			<thead>
+				<tr>
+					<th>Operation</th>
+					<th>Result</th>
+				</tr>
+			</thead>
+			 <tbody>
+				<tr>
+					<td>Addition (+)</td>
+					<td><span id="addResult"></span></td>
+				</tr>
+				<tr>
+					<td>Subtraction (-)</td>
+					<td><span id="subtractResult"></span></td>
+				</tr>
+				<tr>
+					<td>Multiplication (*)</td>
+					<td><span id="multiplyResult"></span></td>
+				</tr>
+				<tr>
+					<td>Division (/)</td>
+					<td><span id="divideResult"></span></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+	</div>
+	
+</body>
+</html>
