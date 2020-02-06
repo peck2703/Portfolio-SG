@@ -10,9 +10,38 @@ Most Recent Revision: 	02/02/2020
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Menu</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/5a30144f63.js" crossorigin="anonymous"></script>
+		<style>
+			article.menu{
+				text-align: center; 
+				padding-left: 45px; 
+				padding-right: 45px;  
+				padding-top: 10px; 
+				padding-bottom: 15px
+			}
+			strong.menu, th{
+				font-size: 1.5em;
+			}
+			.beverages{
+				width: 40%;
+				min-width: 150px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			tbody th{
+				background-color: darkturquoise;
+			}
+			tbody tr:nth-child(even) { 
+				background-color: white; 
+			} 
+			tbody tr:nth-child(odd) { 
+				background-color:cadetblue; 
+			}
+		</style>
 	</head>
 
 	<body>
+		<noscript>This website is best viewed with JavaScript enabled</noscript>
 		<!--Place all the css files here for faster load times -->
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
 		
@@ -23,11 +52,21 @@ Most Recent Revision: 	02/02/2020
 				<h4 class="text-right font-italic" id="sub-header">Where the table meets the Sea!</h4>
 			</header>
 			<hr />
+			<!--Set up a jumbotron for the new location-->
+			<div class="jumbotron" style="height: auto; max-height: 200px; vertical-align: middle; padding: auto;">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center">We're Expanding!</h2>
+						<article>Our new fine dining seafood restaurant coming this summer to the city of Galena. We are accepting pre reservations. If you are interested in a reservation, head over to our contact page and we'll send you the next available date.</article>
+					</div>
+				</div>
+			</div>
+			<hr />
 			<nav>
 				<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 				<div class="row">
 					<div class="col">
-						<a href="index.html" >Home</a>
+						<a href="index.html"><i class="fa fa-home"></i></a>
 					</div>
 					<div class="col">
 						<a href="menu.html">Menu</a>

@@ -9,10 +9,24 @@ Most Recent Revision: 	02/02/2020
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Contact Us</title>
+		<script type="text/javascript" src="scripts/restaurant.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/5a30144f63.js" crossorigin="anonymous"></script>
+		<style>
+			label{
+				font-weight: bold;
+			}
+			input, select, textarea{
+				margin-left: 5px;
+			}
+			span.right{
+				text-align: right;
+			}
+		</style>
 	</head>
 
 	<body>
+		<noscript>This website is best viewed with JavaScript enabled</noscript>
 		<!--Place all the css files here for faster load times -->
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
 		
@@ -23,11 +37,21 @@ Most Recent Revision: 	02/02/2020
 				<h4 class="text-right font-italic" id="sub-header">Where the table meets the Sea!</h4>
 			</header>
 			<hr />
+			<!--Set up a jumbotron for the new location-->
+			<div class="jumbotron" style="height: auto; max-height: 200px; vertical-align: middle; padding: auto;">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center">We're Expanding!</h2>
+						<article>Our new fine dining seafood restaurant coming this summer to the city of Galena. We are accepting pre reservations. If you are interested in a reservation, head over to our contact page and we'll send you the next available date.</article>
+					</div>
+				</div>
+			</div>
+			<hr />
 			<nav>
 				<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 				<div class="row">
 					<div class="col">
-						<a href="index.html" >Home</a>
+						<a href="index.html"><i class="fa fa-home"></i></a>
 					</div>
 					<div class="col">
 						<a href="menu.html">Menu</a>
@@ -40,84 +64,116 @@ Most Recent Revision: 	02/02/2020
 			</nav>
 			<hr />
 		
-		<form action="submit.html" method="POST">
+		<form action="submit.html" name="contactMe" onSubmit="return validateItems();" onReset="resetForm();">
 			<div class="row">
 				<span class="right col">
-					<label for="firstName">First Name:</label>
+					<div class="form-group">
+						<label for="firstName">First Name:</label>
+					</div>
 				</span>
 				<span class="left col">
-					<input type="text" id="firstName" name="firstName">
+					<div class="form-group">
+						<input type="text" id="firstName" name="firstName">
+					</div>
 				</span>
 			</div>
 			<div class="row">
 				<span class="right col">
-					<label for="email">Email:</label>
+					<div class="form-group">
+						<label for="email">Email:</label>
+					</div>
 				</span>
 				<span class="left col">
-					<input type="text" id="email" name="email">
+					<div class="form-group">
+						<input type="text" id="email" name="email">
+					</div>
 				</span>
 			</div>
 			<div class="row">
 				<span class="right col">
-					<label for="phone" >Phone:</label>
+					<div class="form-group">
+						<label for="phone" >Phone:</label>
+					</div>
 				</span>
 				<span class="left col">
-					<input type="text" id="phone" name="phone">
+					<div class="form-group">
+						<input type="text" id="phone" name="phone">
+					</div>
 				</span>
 			</div>
 			<div class="row">
 				<span class="right col">
-					<label for="reason">Reason for Inquiry:</label>
+					<div class="form-group">
+						<label for="reason">Reason for Inquiry:</label>
+					</div>
 				</span>
 				<span class="left col">
-					<select id="reason" name="reason">
-						<option value="default" selected>Catering</option>
-						<option value="private">Private Party</option>
-						<option value="feedback">Feedback</option>
-						<option value="other">Other</option>
-					</select>
+					<div class="form-group">
+						<select id="reason" name="reason">
+							<option value="default" selected>Catering</option>
+							<option value="private">Private Party</option>
+							<option value="feedback">Feedback</option><br>
+							<option value="reservation">Reservation</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
 				</span>
 			</div>
 			<div class="row">
 				<span class="right col">
-					<label for="info" >Additional Information:</label>
+					<div class="form-group">
+						<label for="info" >Additional Information:</label>
+					</div>
 				</span>
 				<span class="left col">
-					<textarea id="info" name="info" rows="5" cols="30"></textarea>
+					<div class="form-group">
+						<textarea id="info" name="info" rows="5" cols="30"></textarea>
+					</div>
 				</span>
 			</div>
 			<div class="row">
 				<span class="right col">
-					<label for="previous">Have you been to the restaurant?</label>
+					<div class="form-group">
+						<label for="previous">Have you been to the restaurant?</label>
+					</div>
 				</span>
 				<span class="left col">
-					<input type="radio" id="choice1" name="previous" value="no">
-					<label for="choice1">No</label>
-					<input type="radio" id="choice2" name="previous" value="yes">
-					<label for="choice2">Yes</label>
+					<div class="form-group">
+						<input type="radio" id="choice1" name="previous" value="no">
+						<label for="choice1">No</label>
+						<input type="radio" id="choice2" name="previous" value="yes">
+						<label for="choice2">Yes</label>
+					</div>
 				</span>
 			</div>
 			<div class="row">
 				<span class="right col">
-					<label for="contact">Best time to contact you:</label>
+					<div class="form-group">
+						<label for="contact">Best time to contact you:</label>
+					</div>
 				</span>
 				<span class="left col">
-					<input type="checkbox" id="mon" name="time" value="mon">
-					<label for="monday">M</label>
-					<input type="checkbox" id="tues" name="time" value="tue">
-					<label for="tuesday">Tu</label>
-					<input type="checkbox" id="wed" name="time" value="wed">
-					<label for="wednesday">W</label>
-					<input type="checkbox" id="thurs" name="time" value="thu">
-					<label for="thursday">Th</label>
-					<input type="checkbox" id="fri" name="time" value="fri">
-					<label for="friday">F</label>
+					<div class="form-group">
+						<input type="checkbox" id="mon" name="time" value="mon">
+						<label for="monday">M</label>
+						<input type="checkbox" id="tues" name="time" value="tue">
+						<label for="tuesday">Tu</label>
+						<input type="checkbox" id="wed" name="time" value="wed">
+						<label for="wednesday">W</label>
+						<input type="checkbox" id="thurs" name="time" value="thu">
+						<label for="thursday">Th</label>
+						<input type="checkbox" id="fri" name="time" value="fri">
+						<label for="friday">F</label>
+					</div>
 				</span>
 			</div>
 			
 			<div class="row">
 				<span class="center col">
-					<input type="submit" value="Send Request" onClick="msg()">
+					<div class="form-group">
+						<input type="submit" value="Send Request" onClick="msg()">
+						<input type="reset" value="Reset" onClick="msg()">
+					</div>
 				</span>
 			</div>
 		</form>

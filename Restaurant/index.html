@@ -10,9 +10,11 @@ Most Recent Revision: 	02/01/2020
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Welcome</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/5a30144f63.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
+		<noscript>This website is best viewed with JavaScript enabled</noscript>
 		<!--Place all the css files here for faster load times -->
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
 		
@@ -23,11 +25,21 @@ Most Recent Revision: 	02/01/2020
 				<h4 class="text-right font-italic" id="sub-header">Where the table meets the Sea!</h4>
 			</header>
 			<hr />
+			<!--Set up a jumbotron for the new location-->
+			<div class="jumbotron" style="height: auto; max-height: 200px; vertical-align: middle; padding: auto;">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center">We're Expanding!</h2>
+						<article>Our new fine dining seafood restaurant coming this summer to the city of Galena. We are accepting reservations prior to the Grand Opening in August. If you are interested in a reservation, head over to our contact page and we'll send you the next available date.</article>
+					</div>
+				</div>
+			</div>
+			<hr />
 			<nav>
 				<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 				<div class="row">
 					<div class="col">
-						<a href="index.html" >Home</a>
+						<a href="index.html"><i class="fa fa-home"></i></a>
 					</div>
 					<div class="col">
 						<a href="menu.html">Menu</a>
@@ -45,9 +57,49 @@ Most Recent Revision: 	02/01/2020
 				<div class="col">
 					<section class="center">
 						<article id="description">
-							<img src="images/restaurant.jpg" alt="Picture inside restaurant" class="home"/>
+							<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+							  	<ol class="carousel-indicators">
+									<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+									<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+								 </ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/restaurant.jpg" class="d-block w-100" alt="..." style="height: 360px; width: 750px;">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>New Location!</h5>
+											<p>Coming this August. Come see our newly designed fine dining experience. Contact us for Reservations!</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<!--Photo taken from https://pixabay.com/photos/united-kingdom-scotland-auburn-2066475/ -->
+										<img src="images/seafood.jpg" class="d-block w-100" alt="..." style="height: 360px;">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>New Seasonal Menu Items Available!</h5>
+											<p>With our new expansion underway, we have secured new seasonally available exotic ingredients from around the world. Never frozen and always delivered fresh!</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<!--Photo taken from https://pixabay.com/photos/glass-of-beer-beer-glass-alcohol-3444480/ -->
+										<img src="images/beer-glass.jpg" class="d-block w-100" alt="..." style="height: 360px;">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>Drink of the Month</h5>
+											<p>Come try our Drink of the Month: our SG Special Brew, made right here in Galena. Pints are $4 and Tall Boys are $7. Happy Hour every day from 3 P.M. to 7 P.M. and all drinks are half off! Try us Today!</p>
+										 </div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+							
 							<h2><em>Restaurant Description</em></h2>
-							<p>In 1967, two brothers had a dream of opening a restaurant together with the simple idea of returning to classic flavors abnd pairing those flavors with a theme that children and adults love. The idea of the Salty Mission is to bring the senses of the sea to the table, in both the food and the aesthetic. We are more than a seafood restaurant, we are a seafood experience that will not soon be forgotten.</p>
+							<p>In 1967, two brothers had a dream of opening a restaurant together with the simple idea of returning to classic flavors and pairing those flavors with a theme that children and adults love. The idea of the Salty Mission is to bring the senses of the sea to the table, in both the food and the aesthetic. We are more than a seafood restaurant, we are a seafood experience that will not soon be forgotten.</p>
 
 							<p>From the traditional seafood menu fished right from our own docks and our fleet of fishing boats, including non-seafood items for our younger and pickier eaters to our more elegant dining experience, there is certainly something for everyone here at the Salty Mission. Stop in today, or check out our contact page to inquire regarding our selection.</p>
 						</article>
